@@ -13,3 +13,9 @@ session:
 
 services:
 	router: App\Router\RouterFactory::createRouter
+
+search:
+	section:
+		in: %appDir%/Model
+		classes:
+			- *Factory

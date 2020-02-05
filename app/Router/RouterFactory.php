@@ -15,6 +15,8 @@ final class RouterFactory
 	public static function createRouter(): RouteList
 	{
 		$router = new RouteList;
+		$router->addRoute('obnova-hesla', 'Sign:passrecovery');
+                
 		$router->addRoute('<presenter>/<action>[/<id>]', 'Homepage:default');
 		return $router;
 	}
